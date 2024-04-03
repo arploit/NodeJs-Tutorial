@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "name": "day2",
+  "version": "0.0.0",
+  "description": "Learning Nodejs",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arploit",
+  "license": "ISC"
+}
