@@ -1,0 +1,21 @@
+{
+  "name": "webserver",
+  "version": "0.0.0",
+  "description": "Webserver ",
+  "main": "server.js",
+  "scripts": {
+    "start":"node WebServer",
+    "dev":"nodemon WebServer",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arploit",
+  "license": "ISC",
+  
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "uuid": "^9.0.1"
+  }
+}
