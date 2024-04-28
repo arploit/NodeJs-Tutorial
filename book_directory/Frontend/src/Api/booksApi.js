@@ -1,5 +1,5 @@
-import { fetchBaseQuery } from "@reduxjs/toolkit/query";
-import { createApi } from "@reduxjs/toolkit/query";
+import { fetchBaseQuery, createApi } from "@reduxjs/toolkit/query/react";
+import { transformDefaultResponse } from "./utils/apiHelper";
 
 export const booksAPI = createApi({
   reducerPath: "booksAPI",
@@ -7,8 +7,9 @@ export const booksAPI = createApi({
   endpoints: (builder) => ({
     getAllTheBooks: builder.query({
       query: () => ({ url: "/" }),
+      transformResponse: (response) => transformDefaultResponse(response),
     }),
   }),
 });
 
-export const { useGetAllTheBooks } = booksAPI;
+export const { useGetAllTheBooksQuery } = booksAPI;

@@ -10,6 +10,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx"], // Add '.jsx' if not present
+    alias: {
+      Components: path.resolve(__dirname, "../src/components"),
+    },
   },
   devServer: {
     hot: true,
