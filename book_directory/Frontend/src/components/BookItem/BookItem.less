@@ -1,5 +1,80 @@
 .book_block{
     display: flex;
-    height: 2.5rem;
-    width: 3.5rem;
+    // height: 2.5rem;
+    width: fit-content;
+    flex-direction: column;
+    padding:0.5rem;
+    background: rgb(2,0,36);
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    position: relative;
+
+    .__inner_block{
+        display: flex;
+        flex-direction: column;
+        img {
+            height: 15rem;
+            width:12rem;
+        }
+        .__author{
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .__year{
+            font-size: 0.75rem;
+            font-weight: 500;
+
+        }
+    }
+
+    .__overlay{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 12rem;
+        height: 15rem;
+
+        .__topNav{
+            // display: flex;
+            // flex-direction: row;
+            
+            .__country{
+                float: left;
+                background: #fff;
+                padding: 0.1rem;
+            }
+
+            .__lang{
+                float: right;
+                background: #fff;
+                padding: 0.1rem;
+            }
+        }
+
+        .__bottomNav{
+            display: flex;
+            background: #fff;
+            padding: 0.1rem;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 28%;
+            right: 30%;
+            // float: bottom;
+
+            .__Link > a{
+                color: black;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 0.25rem;
+            }
+
+        }
+    }
+
+    .__isHidden {
+        display: none;
+    }
 }
